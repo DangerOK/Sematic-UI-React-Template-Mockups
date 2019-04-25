@@ -1,25 +1,45 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+// import { Container } from "semantic-ui-react";
+
+import HeaderNav from "./components/headerNav/HeaderNav";
+import News from "./components/news/News";
+import Startup from "./components/startup/Startup";
+import WebStore from "./components/webStore/WebStore";
+import SocialMedia from "./components/socialMedia/Social Media";
 
 class App extends Component {
+  state = {
+    layouts: ["News", "Startup", "WebStore", "Social Media"],
+    layout: "News"
+  };
+
+  layoutOnClick = e => {
+    this.setState({
+      layout: e.target.id
+    });
+    console.log(this.state.layout);
+  };
+
+  activeLayout = () => {
+    switch (this.state.layout) {
+      case "News":
+        return <News />;
+      case "Startup":
+        return <Startup />;
+      case "WebStore":
+        return <WebStore />;
+      case "Social Media":
+        return <SocialMedia />;
+      default:
+        return <News />;
+    }
+  };
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <HeaderNav layouts={this.state.layouts} onClick={this.layoutOnClick} />
+        {this.activeLayout()}
       </div>
     );
   }
