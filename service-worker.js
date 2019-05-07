@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Sematic-UI-React-Template-Mockups/precache-manifest.a2049ac7c7ef85ce890f1adfc260fa32.js"
+  "/Sematic-UI-React-Template-Mockups/precache-manifest.b5444661605266cdfab74cb479b314c5.js"
 );
 
 workbox.clientsClaim();

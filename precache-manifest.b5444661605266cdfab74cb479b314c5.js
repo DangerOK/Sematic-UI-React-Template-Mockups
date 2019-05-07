@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Sematic-UI-React-Template-Mockups/static/media/joggers.5f65730d.jpg"
   },
   {
-    "revision": "2983f2adfd490c625e76",
+    "revision": "14a5abe6a5e83aa589c8",
     "url": "/Sematic-UI-React-Template-Mockups/static/css/main.d4c53d84.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/Sematic-UI-React-Template-Mockups/static/media/greenPants.56bee11b.jpg"
   },
   {
-    "revision": "2983f2adfd490c625e76",
-    "url": "/Sematic-UI-React-Template-Mockups/static/js/main.3fdf1339.chunk.js"
+    "revision": "14a5abe6a5e83aa589c8",
+    "url": "/Sematic-UI-React-Template-Mockups/static/js/main.aa0598f4.chunk.js"
   },
   {
     "revision": "cbc5469088479fdafdcd5760565faa35",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/Sematic-UI-React-Template-Mockups/static/media/boots.e627e217.jpg"
   },
   {
-    "revision": "61f69ef84d9a68442c605cda1196a481",
+    "revision": "92deee7b14d240322ad0782275fadec7",
     "url": "/Sematic-UI-React-Template-Mockups/index.html"
   }
 ];
